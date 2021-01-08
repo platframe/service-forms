@@ -1,7 +1,7 @@
 // preflight checks
 // Are we running in the correct environment?
-if (parseFloat(process.versions.node) < 12) {
-    console.warn('⚠ This service requires at least v12 of Node');
+if (parseFloat(process.versions.node) < 14) {
+    console.warn('⚠ This service requires at least v14 of Node');
     process.exit();
 }
 
