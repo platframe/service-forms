@@ -1,0 +1,25 @@
+### NATIVE
+
+# settings
+**/clients.yaml
+**/mailboxes.yaml
+
+# deps
+node_modules/
+
+### 3RD PARTY
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# Komodo
+*.komodoproject
+
+### GENERIC
+
+*~
+*.log

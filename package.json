@@ -1,0 +1,25 @@
+{
+  "name": "service-forms",
+  "version": "1.0.0",
+  "description": "Platframe service for processing form data and communicating with a mail server.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "NODE_ENV=development pm2-dev start app.js",
+    "deploy": "pm2 start app.js"
+  },
+  "author": "Platframe authors (https://github.com/platframe/service-forms/graphs/contributors)",
+  "license": "MIT",
+  "homepage": "https://github.com/platframe/service-forms",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.3.0",
+    "pm2": "^4.5.1",
+    "pug": "^2.0.4",
+    "yaml": "^1.7.2"
+  }
+}

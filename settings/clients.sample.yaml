@@ -1,0 +1,43 @@
+# SCHEMA
+# This schema allows each named form on a client to
+# associate itself with a separate configuration.
+# ------------------------------------------------- #
+# unique form identifier:
+#   client: origin's hostname
+#   mailbox: POP/IMAP server mailbox
+#   subject: email subject
+#   template: a Pug email template
+#   recaptcha: reCAPTCHA API private key
+#   recipients:
+#       - list of recipient email addresses
+# ------------------------------------------------- #
+
+example_1:
+    client: example.com
+    mailbox: default
+    subject: 'Message from Example.com'
+    template: example_1
+    recaptcha: YOUR_RECAPTCHA_SERVER_KEY
+    recipients:
+        - hq@example.com
+        - info@example.com
+
+example_2:
+    client: example2.com
+    mailbox: default
+    subject: 'Message from Example2.com'
+    template: example_2
+    recaptcha: YOUR_RECAPTCHA_SERVER_KEY
+    recipients:
+        - office@example2.com
+
+# -------------- uncomment for development and debugging --------------
+
+#form_1:
+#    client: 127.0.0.1
+#    mailbox: default
+#    subject: 'Mode: Development | Client: "127.0.0.1"'
+#    template: example_1
+#    recaptcha: YOUR_RECAPTCHA_SERVER_KEY
+#    recipients:
+#        - dev@example.com
